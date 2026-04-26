@@ -1,0 +1,4 @@
+#!/bin/sh
+
+## a.out.dSYM may get created on OS X.
+rm -f config.* autom4te.cache src/Makevars src/*.o src/*.so src/*.dylib src/cmcmc/*.a src/cmcmc/*.o a.out.dSYM

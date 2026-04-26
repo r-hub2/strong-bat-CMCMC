@@ -1,0 +1,15 @@
+CUDA_HOME = @CUDA_HOME@
+CUDA_LIB_LIB64 = @CUDA_LIB_LIB64@
+PKG_LIBS = -L./cmcmc -lcmcmc -L$(CUDA_HOME)/$(CUDA_LIB_LIB64) -Wl,-rpath,"$(CUDA_HOME)/$(CUDA_LIB_LIB64)" -lcudart -lcurand -lcublas -lcusolver
+PKG_CFLAGS = -I$(CUDA_HOME)/include -DADD_
+
+.PHONY: all
+
+all: $(SHLIB)
+$(SHLIB): cmcmc/libcmcmc.a
+
+cmcmc/libcmcmc.a:
+	@(cd cmcmc && $(MAKE) libcmcmc.a \
+		CC="$(CC)" CFLAGS="$(CFLAGS) $(CPICFLAGS) -I$(R_INCLUDE_DIR) -DRUN_IN_R" \
+		AR="$(AR)" RANLIB="$(RANLIB)" CUDA_HOME="$(CUDA_HOME)" \
+		)

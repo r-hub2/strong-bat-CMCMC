@@ -1,0 +1,23 @@
+Package: CMCMC
+Type: Package
+Title: Contemporaneous MCMC (CMCMC)
+Version: 0.0.1
+Authors@R: c(
+    person("Ahmad", "ALQabandi", email = "ahmad.alqabandi@durham.ac.uk",
+           role = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0009-0006-0055-3846")),
+    person("Louis", "Aslett", email = "louis.aslett@durham.ac.uk",
+           role = c("aut", "ths", "cph"),
+           comment = c(ORCID = "0000-0003-2211-233X")))
+Maintainer: Ahmad ALQabandi <ahmad.alqabandi@durham.ac.uk>
+Description: R package wrapping a CUDA implementation of contemporaneous MCMC.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.3.3
+NeedsCompilation: yes
+Packaged: 2026-04-26 15:55:33 UTC; ahmad
+Author: Ahmad ALQabandi [cre, aut, cph] (ORCID:
+    <https://orcid.org/0009-0006-0055-3846>),
+  Louis Aslett [aut, ths, cph] (ORCID:
+    <https://orcid.org/0000-0003-2211-233X>)
