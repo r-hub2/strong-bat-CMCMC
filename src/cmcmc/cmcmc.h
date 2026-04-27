@@ -5,6 +5,8 @@
 #ifndef CMCMC_H
 #define CMCMC_H
 
+#include <stdint.h>
+
 #include "metrop.h"
 
 // Run the contemporaneous MCMC sampler

@@ -4,6 +4,7 @@
 
 #include <R.h>
 #include <Rinternals.h>
+#include <stdint.h>
 #include "cmcmc/cmcmc.h"
 
 SEXP incaR(SEXP _CUDAlib, SEXP _metropmethod, SEXP _theta_init,

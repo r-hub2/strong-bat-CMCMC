@@ -6,6 +6,8 @@
 #ifndef METROP_1GPU_SM30_H
 #define METROP_1GPU_SM30_H
 
+#include <stdint.h>
+
 // Setup / Cleanup
 int metrop_1gpu_sm30_setup(const char* CUDAlib, int threads, int blocks,
                            float *theta_cur_p1_d, float *logdens_cur_p1_d,
