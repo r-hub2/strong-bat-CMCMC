@@ -16,7 +16,7 @@ Encoding: UTF-8
 Depends: R (>= 4.0.0)
 RoxygenNote: 7.3.3
 NeedsCompilation: yes
-Packaged: 2026-04-27 10:11:19 UTC; ahmad
+Packaged: 2026-04-27 10:20:38 UTC; ahmad
 Author: Ahmad ALQabandi [cre, aut, cph] (ORCID:
     <https://orcid.org/0009-0006-0055-3846>),
   Louis Aslett [aut, ths, cph] (ORCID:
